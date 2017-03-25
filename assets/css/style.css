@@ -1,0 +1,152 @@
+/*
+    Teal color (used for headings and backgrounds): #4aaaa5
+    Regular font color (used for paragraphs and all text besides the headings): #777777
+    Main header background color: #ffffff
+    Main header border color: #cccccc
+    Footer background color: #666666
+    Main content background color: #ffffff
+    Main content border color: #dddddd
+
+    For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
+    For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
+    
+	The entire content area is 960px wide.
+	The main section content is 650px wide.
+	The sidebar is 270px wide.
+*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	background-color: #dddddd;
+	background-image: url(../images/backgroundimage.png);
+}
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav {
+	overflow: auto;
+	background-color: #ffffff;
+	border-bottom: 1px solid #cccccc;
+}
+.logo {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	color: #ffffff;
+	background-color: #4aaaa5;
+	padding: 20px;
+	float: left;
+}
+nav ul {
+	list-style-type: none;
+	font-size: 14px;
+	float: right;
+}
+nav li {
+	display: inline-block;
+	height: 67px;
+	line-height: 67px;
+}
+nav a {
+	text-decoration: none;
+	color: #777777;
+	padding: 10px;
+}
+main {
+	overflow: auto;
+	margin: 40px 0px;
+}
+.content {
+	width: 650px;
+	float: left;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	padding: 25px;
+}
+aside {
+	width: 270px;
+	float: right;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	padding: 25px;
+}
+.heading {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: 2px solid #dddddd;
+	padding-bottom: 25px;
+	margin-bottom: 18px;
+}
+.profileimage {
+	float: left;
+	margin-top: 8px;
+	margin-right: 20px;
+}
+p {
+	margin-bottom: 1em;
+	line-height: 2;
+}
+.portfolio {
+
+}
+.portfolio ul {
+	list-style-type: none;
+}
+.portfolio li {
+	display: inline-block;
+}
+.portfolio a {
+	text-decoration: none;
+}
+
+
+
+input {
+	width: 598px;
+	margin-top: 4px;
+	margin-bottom: 14px;
+	padding: 6px;
+}
+textarea {
+	width: 598px;
+	height: 180px;
+	margin-top: 4px;
+	margin-bottom: 14px;
+	padding: 6px;
+}
+button {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 8px 22px;
+	border: none;
+}
+.asideheading {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+aside ul {
+	list-style-type: none;
+}
+aside li {
+	display: inline-block;
+	padding-right: 14px;
+}
+aside li:last-of-type {
+	padding-right: 0px;
+}
+footer {
+	background-color: #666666;
+	border-top: 3px solid #4aaaa5;
+	height: 67px;
+	line-height: 67px;
+	text-align: center;
+	color: #a6a6a7;
+}
