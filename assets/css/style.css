@@ -36,6 +36,13 @@ nav li {
 	height: 67px;
 	line-height: 67px;
 }
+nav a:hover {
+	text-shadow: 0px 0px 5px #000;
+	color: #ffffff;
+}
+nav a:active {
+	color: #777777;
+}
 nav a {
 	text-decoration: none;
 	color: #777777;
@@ -57,7 +64,11 @@ aside {
 	float: right;
 	background-color: #ffffff;
 	border: 1px solid #dddddd;
-	padding: 25px;
+	padding: 26px;
+}
+h1 {
+	font-size: 27px;
+	font-weight: 700;
 }
 .heading {
 	color: #4aaaa5;
@@ -75,6 +86,9 @@ p {
 	margin-bottom: 1em;
 	line-height: 2;
 }
+p:last-of-type {
+	margin-bottom: 0;
+}
 .portfolio {
 	position: relative;
 }
@@ -87,13 +101,19 @@ p {
 .portfolio a {
 	text-decoration: none;
 }
+.portfolio a:hover {
+	box-shadow: 0px 0px 20px #777777;
+}
 .images {
 }
 .images li {
-	margin: 0px 23px 60px;
+	margin-bottom: 50px;
 }
 .images li:last-of-type {
 	margin-bottom: 0;
+}
+.images li:nth-of-type(odd) {
+	margin-right: 33px;
 }
 .labels {
 	position: absolute;
@@ -101,9 +121,9 @@ p {
 	left: 0;	
 }
 .labels li {
-	width: 250px;
+	width: 280px;
 	height: 50px;
-	margin: 120px 23px 74px;
+	margin: 140px 0px 63px;
 	background-color: #4aaaa5;
 	line-height: 50px;
 	text-align: center;
@@ -114,6 +134,9 @@ p {
 .labels li:last-of-type {
 	margin-bottom: 0;
 }
+.labels li:nth-of-type(odd) {
+	margin-right: 33px;
+}
 .anchors {
 	position: absolute;
 	top: 0;
@@ -121,13 +144,17 @@ p {
 }
 .anchors a {
 	display: block;
-	height: 180px;
-	width: 250px;
-	margin-left: 23px;
-	margin-right: 23px;
+	height: 200px;
+	width: 280px;
 }
-.spacing {
-	margin-bottom: 60px;
+.anchors li {
+	margin-bottom: 50px;
+}
+.anchors li:last-of-type {
+	margin-bottom: 0px;
+}
+.anchors li:nth-of-type(odd) {
+	margin-right: 33px;
 }
 input {
 	width: 598px;
@@ -148,9 +175,17 @@ button {
 	padding: 8px 22px;
 	border: none;
 }
+button:hover {
+	background-color: #2e6a67; 
+}
+button:active {
+	background-color: #4aaaa5;
+}
 .asideheading {
 	color: #4aaaa5;
 	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 20px;
+	font-weight: 700;
 	border-bottom: 1px solid #dddddd;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
@@ -160,16 +195,34 @@ aside ul {
 }
 aside li {
 	display: inline-block;
-	padding-right: 14px;
+	padding-right: 13px;
 }
 aside li:last-of-type {
 	padding-right: 0px;
+}
+aside a:hover {
+	opacity: 0.6;
 }
 footer {
 	background-color: #666666;
 	border-top: 3px solid #4aaaa5;
 	height: 67px;
-	line-height: 67px;
+	line-height: 64px;
 	text-align: center;
 	color: #a6a6a7;
+}
+h6 {
+	font-size: 11px;
+}
+/* sticky footer */
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex: 1;
 }
